@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <script>
+      
+    </script>
+  </head>
+  <body>
+    <form action="/users/refreshtime" method="post"> 
+      Update interval (in seconds): 
+      <select name="interval">
+        <option value=5 selected>5</option> 
+        <option value=10>10</option> 
+        <option value=15>15</option> 
+        <option value=20>20</option> 
+      </select> 
+      <input type="submit" value="Set">
+    </form>
+    <h1><%= title %></h1>
+    <p>Welcome <%= user %></p>
+    <%- select_form %>
+    <%- product_cells %>
+  </body>
+  <a href="/users/logout"> Logout </a>
+</html>
